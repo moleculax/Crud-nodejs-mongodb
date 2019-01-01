@@ -2,10 +2,10 @@
 
 
 
-<div class="container"> 
-<div class="row">
+<div class="container mt-5"> 
+<div class="row ">
     <!--FORM-->
-    <div class="col-md-5">
+    <div class="col-md-5 ">
       <div class="card">
         <div class="card-body">
           <form action="/add" method="post">
@@ -44,7 +44,7 @@
         <td> <%= tasks[i].description %> </td>
         <td>
            <a class="<%= tasks[i].status ? 'btn btn-success' : 'btn btn-dark'%>"
-                  href="/turn/<%= tasks[i]._id %>">Done</a>
+                  href="/done/<%= tasks[i]._id %>">Done</a>
                 <a href="/delete/<%= tasks[i]._id %>"
                   class="btn btn-danger">
                   Delete
@@ -57,10 +57,6 @@
         <% } %>
         </tbody>
         </table>
-
-
-
-
 
 </div>
 
